@@ -1,0 +1,38 @@
+{
+    "name":"contentbox-autoloader",
+    "version":"0.0.1",
+    "author":"",
+    "location":"gpickin/contentbox-autoloader#v0.0.1",
+    "homepage":"https://github.com/gpickin/contentbox-autoloader",
+    "documentation":"https://github.com/gpickin/contentbox-autoloader",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/gpickin/contentbox-autoloader"
+    },
+    "bugs":"https://github.com/gpickin/contentbox-autoloader/issues",
+    "slug":"contentbox-autoloader",
+    "shortDescription":"A module to help ensure permissions, permission groups, permission groups' permissions and setting required by the module, are loaded.",
+    "description":"A module to help ensure permissions, permission groups, permission groups' permissions and setting required by the module, are loaded and exist, by using conventions in the ModuleConfig for a given module.",
+    "type":"modules",
+    "dependencies":{
+        
+    },
+    "devDependencies":{
+        "coldbox":"^4.3.0+188",
+        "testbox":"^2.4.0+80"
+    },
+    "installPaths":{
+        "testbox":"testbox",
+        "coldbox":"tests/resources/app/coldbox"
+    },
+    "scripts":{
+        "postVersion":"package set location='gpickin/contentbox-autoloader#v`package version`'",
+        "onRelease":"publish",
+        "postPublish":"!git push && !git push --tags"
+    },
+    "ignore":[
+        "**/.*",
+        "test",
+        "tests"
+    ]
+}
