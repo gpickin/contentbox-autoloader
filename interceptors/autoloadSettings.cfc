@@ -1,8 +1,8 @@
 component {
 
-	property name="permissionService"   		inject="id:permissionService@cb";
-	property name="permissionGroupService"   	inject="id:permissionGroupService@cb";
-	property name="settingService"   			inject="id:settingService@cb";
+	property name="permissionService"   		inject="provider:permissionService@cb";
+	property name="permissionGroupService"   	inject="provider:permissionGroupService@cb";
+	property name="settingService"   		inject="provider:settingService@cb";
 	
 	property name="moduleSettings"   			inject="coldbox:setting:modules";
 	
